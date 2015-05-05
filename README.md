@@ -25,7 +25,7 @@ This gem requires `julia` be accessable from the `$PATH`.
 The following will pull the data from `my_data_variable` and put it into a data frame which will be accessible from julia by the name `my_julia_variable`. It then creates a graph using [Gadfly](https://github.com/dcjones/Gadfly.jl) and outputs an SVG directly into the rendered HTML.
 
 ```
-  ```julia(dataFrame('my_julia_variable',get('my_data_variable'))),strip_whitespace(),raw()
+  ```julia(data_frame('my_julia_variable',get('my_data_variable'))),strip_whitespace(),raw()
   using Gadfly
   myplot = plot(x=1:10, y=2.^rand(10),
        Scale.y_sqrt, Geom.point, Geom.smooth,
