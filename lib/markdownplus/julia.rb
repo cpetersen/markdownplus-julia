@@ -17,7 +17,6 @@ module Markdownplus
           end
           file.write(input)
           file.close
-          puts File.read(file.path)
           output = `julia #{file.path}`
           output.gsub!(/\n\s+/,"\n")
         ensure
@@ -59,6 +58,6 @@ module Markdownplus
         DataFrame.new(name, csv)
       end
     end
-    HandlerRegistry.register("dataFrame", DataFrameHandler)
+    HandlerRegistry.register("data_frame", DataFrameHandler)
   end
 end
