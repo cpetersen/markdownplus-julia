@@ -1,6 +1,6 @@
 # Markdownplus::Julia
 
-Julia plugin for [Markdownplus](https://github.com/cpetersen/markdownplus)
+[Julia](http://julialang.org) plugin for [Markdownplus](https://github.com/cpetersen/markdownplus). Embedded Julia allows for statistical analysis and charting directly within Markdown.
 
 ## Installation
 
